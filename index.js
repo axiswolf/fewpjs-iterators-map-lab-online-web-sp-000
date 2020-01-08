@@ -11,8 +11,4 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-function titleCased() {
-  return tutorials.map(str => {
-    return str.replace(/\b\w/g, x => x.toUpperCase())
-  })
-}
+const titleCased = () => tutorials.map(str => str.replace(/\b\w/g, x => x.toUpperCase()))
